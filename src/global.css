@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-blue: #92d9e9;
+  --color-green: #92e99b;
+  --color-red: #ff7e7e;
+  --color-yellow: #f7f7b5;
+  --color-bg-todo: #efefef;
+}
+
+body {
+  font-family: "Helvetica", sans-serifñ;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 0.8rem;
+}
+
+.grid-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.grid-container {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  place-items: center;
+  grid-gap: 20px;
+}
+
+.shadow-todo {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+@layer components {
+  .btn {
+    @apply flex border-2 font-bold px-2 border-black cursor-pointer w-fit;
+  }
+
+  .btn-submit {
+    @apply bg-[var(--color-red)];
+  }
+
+  .btn-brand {
+    @apply bg-[var(--color-brand)];
+  }
+
+  .bg-brand {
+    @apply bg-[var(--color-brand)];
+  }
+}
+
+.modal {
+  @apply fixed top-0 left-0 w-[100vw] h-[100vh] flex items-center justify-center bg-black bg-opacity-50;
+}

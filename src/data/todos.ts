@@ -1,0 +1,75 @@
+import { ToDo } from "~/types/types";
+
+export const todos = [
+  {
+    id: 1,
+    project: "Hogar",
+    title: "Limpiar el baño",
+    description: "Hay que echarle bien de cristasol a los espejos",
+    priority: "high",
+    status: "todo",
+  },
+  {
+    id: 2,
+    project: "Trabajo",
+    title: "Terminar el report para el jefe",
+    description:
+      "Cuidado con los detalles, la presentación debe ser muy buena.",
+    priority: "high",
+    status: "doing",
+  },
+  {
+    id: 3,
+    project: "Hogar",
+    title: "Comprar queso",
+    priority: "high",
+    status: "done",
+  },
+  {
+    id: 4,
+    project: "Hogar",
+    title: "Comprar atún",
+    description: "En lata a ser posible",
+    priority: "medium",
+    status: "todo",
+  },
+  {
+    id: 5,
+    project: "Hogar",
+    title: "Pasar la aspiradora",
+    description: "Mejor hacerlo por la mañana, cuando los niños no estén",
+    priority: "medium",
+    status: "todo",
+  },
+  {
+    id: 6,
+    project: "Trabajo",
+    title: "Actualizar el ordenador",
+    description: "Mejor hacerlo por la noche",
+    priority: "medium",
+    status: "todo",
+  },
+  {
+    id: 7,
+    project: "Trabajo",
+    title: "Actualizar el ordenador",
+    description: "Mejor hacerlo por la noche",
+    priority: "low",
+    status: "todo",
+  },
+  {
+    id: 8,
+    project: "Trabajo",
+    title: "Actualizar el ordenador",
+    priority: "medium",
+    status: "todo",
+  },
+  {
+    id: 9,
+    project: "Trabajo",
+    title: "Actualizar el ordenador",
+    description: "Mejor hacerlo por la noche",
+    priority: "medium",
+    status: "todo",
+  },
+] satisfies ToDo[];
